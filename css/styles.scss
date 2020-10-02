@@ -1,10 +1,14 @@
 $red1: #ee4540;
 $red2: #c72c41;
 $red3: #801336;
-$dark: #c72c41;
+$dark: #2d132c;
 $white: #fff;
 $gray1: #e8e8e8;
 $gray2: #cccccc;
+
+$font-family1: 'Oxygen', sans-serif;
+$font-family2: 'Saira Extra Condensed', sans-serif;
+$font-family3: 'Open Sans', sans-serif;
 
 html {
   font-size: 62.5%;
@@ -18,7 +22,7 @@ html {
 body {
   font-size: 1.6rem;
   line-height: 1.5;
-  font-family: 'Oxygen', sans-serif;
+  font-family: $font-family1;
   margin: 0;
 }
 
@@ -26,7 +30,7 @@ body {
   display: flex;
   flex-direction: row;
 }
-
+/* === ASIDE STYLES === */
 aside {
   height: 100vh;
   background-color: #c72c41;
@@ -75,9 +79,87 @@ aside {
   }
 }
 
+/* === END ASIDE STYLES === */
+
+/* === MAIN STYLES === */
+
 main {
   margin-left: 20%;
-  height: 100rem;
   background-color: $white;
   width: 80%;
 }
+
+/* === ABOUT === */
+
+#about {
+  background: $white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+}
+
+.aboutIntroductionContainer {
+  height: 70%;
+  .title {
+    height: 22rem;
+    a {
+      font-family: $font-family2;
+      text-decoration: none;
+      color: $dark;
+      font-size: 7rem;
+      text-transform: uppercase;
+    }
+  }
+  p {
+    padding-top: 2rem;
+    color: #000;
+    font-size: 2rem;
+    font-family: $font-family3;
+  }
+}
+
+.aboutIconsContainer {
+  height: 30%;
+  a {
+    text-decoration: none;
+    color: $gray2;
+    margin: 0 3rem;
+    i {
+      font-size: 6rem;
+      color: $dark;
+      &:hover {
+        color: $red2;
+      }
+    }
+  }
+}
+
+/* === END ABOUT === */
+
+/* === SKILLS === */
+
+#skills {
+  background: chartreuse;
+  height: 100vh;
+}
+
+/* === END SKILLS === */
+
+/* === PROJECTS === */
+
+#projects {
+  background: cornflowerblue;
+}
+
+/* === END PROJECTS === */
+
+/* === EXPERIENCE === */
+
+#experience {
+  background: darkseagreen;
+}
+
+/* === END EXPERIENCE === */
+
+/* === END MAIN STYLES === */

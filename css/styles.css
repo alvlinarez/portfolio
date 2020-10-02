@@ -21,6 +21,7 @@ body {
   flex-direction: row;
 }
 
+/* === ASIDE STYLES === */
 aside {
   height: 100vh;
   background-color: #c72c41;
@@ -67,11 +68,79 @@ aside .asideIconsContainer a i:hover {
   color: #fff;
 }
 
+/* === END ASIDE STYLES === */
+/* === MAIN STYLES === */
 main {
   margin-left: 20%;
-  height: 100rem;
   background-color: #fff;
   width: 80%;
 }
+
+/* === ABOUT === */
+#about {
+  background: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+}
+
+.aboutIntroductionContainer {
+  height: 70%;
+}
+.aboutIntroductionContainer .title {
+  height: 22rem;
+}
+.aboutIntroductionContainer .title a {
+  font-family: "Saira Extra Condensed", sans-serif;
+  text-decoration: none;
+  color: #2d132c;
+  font-size: 7rem;
+  text-transform: uppercase;
+}
+.aboutIntroductionContainer p {
+  padding-top: 2rem;
+  color: #000;
+  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.aboutIconsContainer {
+  height: 30%;
+}
+.aboutIconsContainer a {
+  text-decoration: none;
+  color: #cccccc;
+  margin: 0 3rem;
+}
+.aboutIconsContainer a i {
+  font-size: 6rem;
+  color: #2d132c;
+}
+.aboutIconsContainer a i:hover {
+  color: #c72c41;
+}
+
+/* === END ABOUT === */
+/* === SKILLS === */
+#skills {
+  background: chartreuse;
+  height: 100vh;
+}
+
+/* === END SKILLS === */
+/* === PROJECTS === */
+#projects {
+  background: cornflowerblue;
+}
+
+/* === END PROJECTS === */
+/* === EXPERIENCE === */
+#experience {
+  background: darkseagreen;
+}
+
+/* === END EXPERIENCE === */
+/* === END MAIN STYLES === */
 
 /*# sourceMappingURL=styles.css.map */
