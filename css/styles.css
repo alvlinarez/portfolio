@@ -76,6 +76,10 @@ main {
   width: 80%;
 }
 
+section {
+  border-bottom: 0.1rem solid #cccccc;
+}
+
 /* === ABOUT === */
 #about {
   background: #fff;
@@ -86,7 +90,7 @@ main {
 }
 
 .aboutIntroductionContainer {
-  height: 70%;
+  height: 75%;
 }
 .aboutIntroductionContainer .title {
   height: 22rem;
@@ -95,7 +99,7 @@ main {
   font-family: "Saira Extra Condensed", sans-serif;
   text-decoration: none;
   color: #2d132c;
-  font-size: 7rem;
+  font-size: 7.5rem;
   text-transform: uppercase;
 }
 .aboutIntroductionContainer p {
@@ -106,7 +110,7 @@ main {
 }
 
 .aboutIconsContainer {
-  height: 30%;
+  height: 25%;
 }
 .aboutIconsContainer a {
   text-decoration: none;
@@ -114,7 +118,7 @@ main {
   margin: 0 3rem;
 }
 .aboutIconsContainer a i {
-  font-size: 6rem;
+  font-size: 5.5rem;
   color: #2d132c;
 }
 .aboutIconsContainer a i:hover {
@@ -124,8 +128,48 @@ main {
 /* === END ABOUT === */
 /* === SKILLS === */
 #skills {
-  background: chartreuse;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+}
+
+.skillsTitle {
+  text-align: center;
+  font-family: "Saira Extra Condensed", sans-serif;
+}
+.skillsTitle > h1 {
+  font-size: 3.5rem;
+  margin: 0 0 5rem 0;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  width: 100%;
+  height: 100%;
+}
+
+.skillsGridItem {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.skillsGridItem div {
+  text-align: center;
+  height: 7rem;
+}
+.skillsGridItem div img {
+  width: 7rem;
+}
+.skillsGridItem div i {
+  font-size: 7rem;
+}
+.skillsGridItem:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* === END SKILLS === */
