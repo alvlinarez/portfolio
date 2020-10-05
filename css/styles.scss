@@ -91,16 +91,27 @@ main {
 
 section {
   border-bottom: 0.1rem solid $gray2;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+}
+
+.sectionTitle {
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  font-family: $font-family2;
+  > h1 {
+    font-size: 5rem;
+    margin: 0 0 5rem 0;
+  }
 }
 
 /* === ABOUT === */
 
 #about {
   background: $white;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  padding: 5rem;
 }
 
 .aboutIntroductionContainer {
@@ -144,19 +155,6 @@ section {
 /* === SKILLS === */
 
 #skills {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  padding: 5rem;
-}
-
-.skillsTitle {
-  text-align: center;
-  font-family: $font-family2;
-  > h1 {
-    font-size: 3.5rem;
-    margin: 0 0 5rem 0;
-  }
 }
 
 .skillsGrid {
@@ -194,7 +192,31 @@ section {
 /* === PROJECTS === */
 
 #projects {
-  background: cornflowerblue;
+  height: auto;
+}
+
+.projectsContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-bottom: 5rem;
+  .projectsImageContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 85%;
+      cursor: pointer;
+    }
+    p {
+      padding: 0;
+      margin-top: 2.5rem;
+      font-size: 2.8rem;
+      font-family: $font-family2;
+      color: $dark;
+    }
+  }
 }
 
 /* === END PROJECTS === */
@@ -202,9 +224,86 @@ section {
 /* === EXPERIENCE === */
 
 #experience {
-  background: darkseagreen;
+  height: 100vh;
+}
+
+.experienceContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-bottom: 5rem;
+  h2,
+  h3 {
+    text-transform: uppercase;
+    font-family: $font-family2;
+    padding: 0;
+    margin: 0;
+  }
+  h2 {
+    font-size: 3.5rem;
+    padding-bottom: 1.5rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  .experienceContent {
+    width: 80%;
+  }
+  .experienceDate {
+    width: 20%;
+    text-align: right;
+    color: $red2;
+    font-family: $font-family3;
+  }
 }
 
 /* === END EXPERIENCE === */
+
+/* === CONTACT ME === */
+
+.contactFormContainer {
+  background: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactFormField {
+  display: flex;
+  width: 80%;
+  background: #cd6799;
+  padding: 2rem 0;
+  //margin-left: 2.5%;
+  justify-content: space-between;
+  > div {
+    display: flex;
+    flex-direction: column;
+    label {
+      margin-bottom: 1rem;
+    }
+    input {
+      width: 100%;
+      height: 4rem;
+      border-radius: 0.5rem;
+    }
+    textarea {
+      border-radius: 0.5rem;
+      height: 15rem;
+    }
+  }
+  .credentials {
+    width: 40%;
+  }
+  .message {
+    width: 100%;
+  }
+  button {
+    width: 15rem;
+    height: 4rem;
+    cursor: pointer;
+  }
+}
+
+/* === CONTACT ME === */
 
 /* === END MAIN STYLES === */
