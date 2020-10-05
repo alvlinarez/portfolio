@@ -16,11 +16,11 @@
     <aside>
       <nav>
         <ul>
-          <li>About</li>
-          <li>Skills</li>
-          <li>Projects</li>
-          <li>Experience</li>
-          <li>Contact me</li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#touch">Stay in touch</a></li>
         </ul>
       </nav>
       <div class="asideIconsContainer">
@@ -56,23 +56,11 @@
           <p>Front End developer with more than 3 years of experience, passionate about creating elegant,
             efficient and responsive websites.</p>
         </div>
-        <div class="aboutIconsContainer">
-          <a href="https://github.com/alvlinarez" target="_blank">
-          <span>
-            <i class="fab fa-github"></i>
-          </span>
-          </a>
-          <a href="https://www.linkedin.com/in/alvlinarez" target="_blank">
-          <span>
-            <i class="fab fa-linkedin"></i>
-          </span>
-          </a>
-          <a href="mailto:alvlinarez@gmail.com">
-          <span>
-            <i class="fas fa-envelope"></i>
-          </span>
-          </a>
+
+        <div class="aboutButtonContainer">
+          <button type="button" class="aboutButton" onclick="window.location.href='#projects'">Portfolio</button>
         </div>
+
       </section>
 
       <section id="skills">
@@ -219,33 +207,33 @@
 
       </section>
 
-
-      <section id="contact">
+      <section id="touch">
         <div class="sectionTitle">
-          <h1>Contact me</h1>
+          <h1>Stay in touch</h1>
         </div>
-        <div class="contactFormContainer">
-          <div class="contactFormField">
-            <div class="credentials">
-              <label for="name">Name</label>
-              <input id="name" name="name" type="text" placeholder="Your name..." />
-            </div>
-            <div class="credentials">
-              <label for="email">Email</label>
-              <input name="email" id="email" type="text" placeholder="Your email..." />
-            </div>
+
+
+        <div class="linksContainer">
+          <div class="linksContent">
+            <span><i class="fab fa-github"></i></span>
+            <a href="https://github.com/alvlinarez" target="_blank">github.com/alvlinarez</a>
           </div>
-          <div class="contactFormField">
-            <div class="message">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Your message..."></textarea>
-            </div>
+          <div class="linksContent">
+            <span style="color: #006192"><i class="fab fa-linkedin"></i></span>
+            <a href="https://www.linkedin.com/in/alvlinarez" target="_blank">linkedin.com/in/alvlinarez</a>
           </div>
-          <div class="contactFormField">
-            <button>Send</button>
+          <div class="linksContent">
+            <span style="color: #239ab9"><i class="fas fa-envelope-square"></i></span>
+            <a href="mailto:alvlinarez@gmail.com">alvlinarez@gmail.com</a>
           </div>
         </div>
       </section>
+
+      <footer>
+        <div class="footerContainer">
+          Made with &#10084; by @alvlinarez
+        </div>
+      </footer>
     </main>
   </div>
   <script type="text/javascript" src="./js/typewriter.js"></script>

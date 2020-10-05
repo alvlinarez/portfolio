@@ -1,6 +1,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -46,11 +47,14 @@ aside nav > ul:first-child {
 aside nav > ul > li {
   list-style: none;
   text-transform: uppercase;
-  color: #e8e8e8;
   margin-bottom: 5rem;
   font-size: 1.8rem;
 }
-aside nav > ul > li:hover {
+aside nav > ul > li a {
+  color: #e8e8e8;
+  text-decoration: none;
+}
+aside nav > ul > li a:hover {
   cursor: pointer;
   color: #fff;
 }
@@ -120,20 +124,28 @@ section {
   font-family: "Open Sans", sans-serif;
 }
 
-.aboutIconsContainer {
+.aboutButtonContainer {
+  margin-top: 7rem;
   height: 25%;
 }
-.aboutIconsContainer a {
-  text-decoration: none;
-  color: #cccccc;
-  margin: 0 3rem;
-}
-.aboutIconsContainer a i {
-  font-size: 5.5rem;
-  color: #2d132c;
-}
-.aboutIconsContainer a i:hover {
+.aboutButtonContainer .aboutButton {
+  background-color: #fff;
+  border: 0.2rem solid #c72c41;
   color: #c72c41;
+  text-transform: uppercase;
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+.aboutButtonContainer .aboutButton:hover {
+  background-color: #c72c41;
+  color: #e8e8e8;
+}
+.aboutButtonContainer .aboutButton:active, .aboutButtonContainer .aboutButton:focus {
+  border: 0.2rem solid #c72c41;
 }
 
 /* === END ABOUT === */
@@ -200,7 +212,7 @@ section {
 /* === END PROJECTS === */
 /* === EXPERIENCE === */
 #experience {
-  height: 100vh;
+  height: auto;
 }
 
 .experienceContainer {
@@ -234,50 +246,48 @@ section {
 }
 
 /* === END EXPERIENCE === */
-/* === CONTACT ME === */
-.contactFormContainer {
-  background: red;
+/* === TOUCH === */
+#touch {
+  height: auto;
+}
+
+.linksContainer {
+  display: flex;
+  justify-content: space-around;
+}
+.linksContainer .linksContent {
   display: flex;
   flex-direction: column;
+  text-align: center;
+}
+.linksContainer .linksContent span {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.linksContainer .linksContent span i {
+  font-size: 7rem;
+}
+.linksContainer .linksContent a {
+  text-decoration: none;
+  color: #c72c41;
+  word-break: break-word;
+}
+.linksContainer .linksContent a:hover {
+  text-decoration: underline;
+}
+
+/* === END TOUCH === */
+/* === END FOOTER === */
+.footerContainer {
+  height: 5rem;
+  background: #c72c41;
+  color: #e8e8e8;
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.contactFormField {
-  display: flex;
-  width: 80%;
-  background: #cd6799;
-  padding: 2rem 0;
-  justify-content: space-between;
-}
-.contactFormField > div {
-  display: flex;
-  flex-direction: column;
-}
-.contactFormField > div label {
-  margin-bottom: 1rem;
-}
-.contactFormField > div input {
-  width: 100%;
-  height: 4rem;
-  border-radius: 0.5rem;
-}
-.contactFormField > div textarea {
-  border-radius: 0.5rem;
-  height: 15rem;
-}
-.contactFormField .credentials {
-  width: 40%;
-}
-.contactFormField .message {
-  width: 100%;
-}
-.contactFormField button {
-  width: 15rem;
-  height: 4rem;
-  cursor: pointer;
-}
-
-/* === CONTACT ME === */
+/* === END FOOTER === */
 /* === END MAIN STYLES === */
 
 /*# sourceMappingURL=styles.css.map */

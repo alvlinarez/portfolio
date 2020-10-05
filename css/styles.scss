@@ -13,6 +13,7 @@ $font-family3: 'Open Sans', sans-serif;
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *,
 *:before,
@@ -52,12 +53,15 @@ aside {
       > li {
         list-style: none;
         text-transform: uppercase;
-        color: $gray1;
         margin-bottom: 5rem;
         font-size: 1.8rem;
-        &:hover {
-          cursor: pointer;
-          color: $white;
+        a {
+          color: $gray1;
+          text-decoration: none;
+          &:hover {
+            cursor: pointer;
+            color: $white;
+          }
         }
       }
     }
@@ -134,18 +138,27 @@ section {
   }
 }
 
-.aboutIconsContainer {
+.aboutButtonContainer {
+  margin-top: 7rem;
   height: 25%;
-  a {
-    text-decoration: none;
-    color: $gray2;
-    margin: 0 3rem;
-    i {
-      font-size: 5.5rem;
-      color: $dark;
-      &:hover {
-        color: $red2;
-      }
+  .aboutButton {
+    background-color: $white;
+    border: 0.2rem solid $red2;
+    color: $red2;
+    text-transform: uppercase;
+    font-family: $font-family2;
+    font-weight: bold;
+    font-size: 3rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    &:hover {
+      background-color: $red2;
+      color: $gray1;
+    }
+    &:active,
+    &:focus {
+      border: 0.2rem solid $red2;
     }
   }
 }
@@ -224,7 +237,7 @@ section {
 /* === EXPERIENCE === */
 
 #experience {
-  height: 100vh;
+  height: auto;
 }
 
 .experienceContainer {
@@ -259,51 +272,49 @@ section {
 
 /* === END EXPERIENCE === */
 
-/* === CONTACT ME === */
-
-.contactFormContainer {
-  background: red;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* === TOUCH === */
+#touch {
+  height: auto;
 }
 
-.contactFormField {
+.linksContainer {
   display: flex;
-  width: 80%;
-  background: #cd6799;
-  padding: 2rem 0;
-  //margin-left: 2.5%;
-  justify-content: space-between;
-  > div {
+  justify-content: space-around;
+  .linksContent {
     display: flex;
     flex-direction: column;
-    label {
-      margin-bottom: 1rem;
+    text-align: center;
+    span {
+      text-align: center;
+      padding-bottom: 1rem;
+      i {
+        font-size: 7rem;
+      }
     }
-    input {
-      width: 100%;
-      height: 4rem;
-      border-radius: 0.5rem;
+    a {
+      text-decoration: none;
+      color: $red2;
+      word-break: break-word;
+      &:hover {
+        text-decoration: underline;
+      }
     }
-    textarea {
-      border-radius: 0.5rem;
-      height: 15rem;
-    }
-  }
-  .credentials {
-    width: 40%;
-  }
-  .message {
-    width: 100%;
-  }
-  button {
-    width: 15rem;
-    height: 4rem;
-    cursor: pointer;
   }
 }
 
-/* === CONTACT ME === */
+/* === END TOUCH === */
+
+/* === END FOOTER === */
+
+.footerContainer {
+  height: 5rem;
+  background: $red2;
+  color: $gray1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* === END FOOTER === */
 
 /* === END MAIN STYLES === */
