@@ -172,6 +172,55 @@
           </div>
         </div>
 
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn">Open Modal</button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modalContent">
+            <span class="close">&times;</span>
+            <div class="modalContainer">
+              <div class="modalImage">
+                <img src="./assets/static/videos.png" alt="Videos" />
+              </div>
+              <div class="modalInfoContent">
+                <h2>Videos</h2>
+                <div class="modalSkills">
+                  <span>React</span>
+                  <span>Redux</span>
+                  <span>Express</span>
+                  <span>MongoDB</span>
+                  <span>Sass</span>
+                  <span>Passport</span>
+                </div>
+                <h3>About</h3>
+                <textarea readonly rows="10" cols="50">Website that uses React, Redux and Express to show videos.
+Some features used:
+ - User can watch movies
+ - User can add and remove videos playlists
+ - Authentication with Google and Facebook
+ - Server side rendering with React
+                </textarea>
+                <div class="modalButtons">
+                  <button>
+                    <a href="https://github.com/alvlinarez/videos" target="_blank">
+                    <span><i class="fas fa-eye"></i> Demo</span>
+                    </a>
+                  </button>
+                  <button>
+                    <a href="https://github.com/alvlinarez/videos" target="_blank">
+                      <span><i class="fas fa-code"></i> Code</span>
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
       </section>
 
       <section id="experience">
@@ -237,5 +286,6 @@
     </main>
   </div>
   <script type="text/javascript" src="./js/typewriter.js"></script>
+  <script type="text/javascript" src="./js/modal.js"></script>
 </body>
 </html>
