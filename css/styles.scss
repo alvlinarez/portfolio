@@ -283,6 +283,10 @@ section {
     img {
       width: 90%;
     }
+    .petgramImg {
+      height: 90%;
+      width: 50%;
+    }
   }
   .modalInfoContent {
     width: 40%;
@@ -292,8 +296,8 @@ section {
       span {
         border: 0.2rem solid $red1;
         border-radius: 5px;
-        padding: .1rem .2rem;
-        margin: .5rem;
+        padding: 0.1rem 0.2rem;
+        margin: 0.5rem;
       }
     }
     textarea {
@@ -303,7 +307,7 @@ section {
   }
   .modalButtons {
     margin-top: 2rem;
-    button {
+    a {
       background: $red2;
       border: 0.2rem solid $red2;
       cursor: pointer;
@@ -312,12 +316,11 @@ section {
       text-transform: uppercase;
       font-family: $font-family2;
       font-size: 1.5rem;
-      a {
-        text-decoration: none;
-        color: $gray1;
-        i {
-          margin-right: 1rem;
-        }
+      text-decoration: none;
+      border-radius: 0.3rem;
+      color: $gray1;
+      i {
+        margin-right: 1rem;
       }
       &:hover {
         background-color: $red3;

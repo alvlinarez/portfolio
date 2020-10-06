@@ -48,12 +48,12 @@
           <div class="title">
             <h1>
               <a class="typewrite" data-period="2000"
-                 data-type='[ "Hi, I am Alvaro Linarez, a Front end developer." ]'>
+                 data-type='[ "Hi, I am Alvaro Linarez, a Full stack developer." ]'>
                 <span class="wrap"></span>
               </a>
             </h1>
           </div>
-          <p>Front End developer with more than 3 years of experience, passionate about creating elegant,
+          <p>Full Stack developer with more than 3 years of experience, passionate about creating elegant,
             efficient and responsive websites.</p>
         </div>
 
@@ -144,43 +144,39 @@
 
         <div class="projectsContainer">
           <div class="projectsImageContainer">
-            <img src="./assets/static/project1.png" alt="Project Image" />
+            <img src="./assets/static/project1.png" alt="Project Image" onclick="openModal('videosModal')" />
             <p>Videos</p>
           </div>
           <div class="projectsImageContainer">
-            <img src="./assets/static/project2.png" alt="Project Image" />
+            <img src="./assets/static/project2.png" alt="Project Image" onclick="openModal('petgramModal')"/>
             <p>Petgram</p>
           </div>
           <div class="projectsImageContainer">
-            <img src="./assets/static/project3.png" alt="Project Image" />
+            <img src="./assets/static/project3.png" alt="Project Image" onclick="openModal('huntModal')" />
             <p>Hunt</p>
           </div>
         </div>
 
         <div class="projectsContainer">
           <div class="projectsImageContainer">
-            <img src="./assets/static/project4.png" alt="Project Image" />
+            <img src="./assets/static/project4.png" alt="Project Image" onclick="openModal('crmModal')" />
             <p>CRM</p>
           </div>
           <div class="projectsImageContainer">
-            <img src="./assets/static/project5.png" alt="Project Image" />
-            <p>Tasks App</p>
+            <img src="./assets/static/project5.png" alt="Project Image" onclick="openModal('tasksModal')" />
+            <p>Tasks</p>
           </div>
           <div class="projectsImageContainer">
-            <img src="./assets/static/project6.png" alt="Project Image" />
-            <p>Chat App</p>
+            <img src="./assets/static/project6.png" alt="Project Image" onclick="openModal('wasapModal')" />
+            <p>Wasap</p>
           </div>
         </div>
 
-        <!-- Trigger/Open The Modal -->
-        <button id="myBtn">Open Modal</button>
-
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-
+        <!-- Videos Modal -->
+        <div id="videosModal" class="modal">
           <!-- Modal content -->
           <div class="modalContent">
-            <span class="close">&times;</span>
+            <span class="close" onclick="closeModal('videosModal')">&times;</span>
             <div class="modalContainer">
               <div class="modalImage">
                 <img src="./assets/static/videos.png" alt="Videos" />
@@ -202,23 +198,232 @@ Some features used:
  - User can add and remove videos playlists
  - Authentication with Google and Facebook
  - Server side rendering with React
+
+*** Default Credentials:
+email: candy@candy.com
+password: 123456
                 </textarea>
                 <div class="modalButtons">
-                  <button>
-                    <a href="https://github.com/alvlinarez/videos" target="_blank">
-                    <span><i class="fas fa-eye"></i> Demo</span>
-                    </a>
-                  </button>
-                  <button>
-                    <a href="https://github.com/alvlinarez/videos" target="_blank">
-                      <span><i class="fas fa-code"></i> Code</span>
-                    </a>
-                  </button>
+                  <a href="https://github.com/alvlinarez/videos" target="_blank">
+                  <span><i class="fas fa-eye"></i> Demo</span>
+                  </a>
+                  <a href="https://github.com/alvlinarez/videos" target="_blank">
+                    <span><i class="fas fa-code"></i> Code</span>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
+        <!-- Petgram Modal -->
+        <div id="petgramModal" class="modal">
+          <!-- Modal content -->
+          <div class="modalContent">
+            <span class="close" onclick="closeModal('petgramModal')">&times;</span>
+            <div class="modalContainer">
+              <div class="modalImage">
+                <img src="./assets/static/petgram.png" class="petgramImg" alt="Petgram" />
+              </div>
+              <div class="modalInfoContent">
+                <h2>Petgram</h2>
+                <div class="modalSkills">
+                  <span>Nextjs</span>
+                  <span>React Api Context</span>
+                  <span>Styled Components</span>
+                  <span>Express</span>
+                  <span>MongoDB</span>
+                  <span>Passport</span>
+                </div>
+                <h3>About</h3>
+                <textarea readonly rows="10" cols="50">Lite Instagram for pets website clone that uses Nextjs, Styled Components, React Api Context, MongoDB and Express.
+Some features used:
+ - User can like and unlike photos
+ - User can add photos as favorites
+ - Authentication with Google and Facebook
+
+*** Default Credentials:
+email: candy@candy.com
+password: 123456
+                </textarea>
+                <div class="modalButtons">
+                  <a href="https://github.com/alvlinarez/videos" target="_blank">
+                    <span><i class="fas fa-eye"></i> Demo</span>
+                  </a>
+                  <a href="https://github.com/alvlinarez/videos" target="_blank">
+                    <span><i class="fas fa-code"></i> Code</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hunt Modal -->
+        <div id="huntModal" class="modal">
+          <!-- Modal content -->
+          <div class="modalContent">
+            <span class="close" onclick="closeModal('huntModal')">&times;</span>
+            <div class="modalContainer">
+              <div class="modalImage">
+                <img src="./assets/static/hunt.png" alt="Hunt" />
+              </div>
+              <div class="modalInfoContent">
+                <h2>Hunt</h2>
+                <div class="modalSkills">
+                  <span>Nextjs</span>
+                  <span>React Api Context</span>
+                  <span>Styled Components</span>
+                  <span>Express</span>
+                  <span>MongoDB</span>
+                  <span>Passport</span>
+                </div>
+                <h3>About</h3>
+                <textarea readonly rows="10" cols="50">Lite Hunt website clone that uses Nextjs, Styled Components, React Api Context, MongoDB and Express.
+Some features used:
+ - Users can create products, and upload images
+ - Users can comments in products' info
+ - Authentication with Google and Facebook
+
+*** Default Credentials:
+email: candy@candy.com
+password: 123456
+                </textarea>
+                <div class="modalButtons">
+                  <a href="https://github.com/alvlinarez/hunt" target="_blank">
+                    <span><i class="fas fa-eye"></i> Demo</span>
+                  </a>
+                  <a href="https://github.com/alvlinarez/hunt" target="_blank">
+                    <span><i class="fas fa-code"></i> Code</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CRM Modal -->
+        <div id="crmModal" class="modal">
+          <!-- Modal content -->
+          <div class="modalContent">
+            <span class="close" onclick="closeModal('crmModal')">&times;</span>
+            <div class="modalContainer">
+              <div class="modalImage">
+                <img src="./assets/static/crm.png" alt="CRM" />
+              </div>
+              <div class="modalInfoContent">
+                <h2>CRM</h2>
+                <div class="modalSkills">
+                  <span>React</span>
+                  <span>Apollo Client</span>
+                  <span>Apollo Server</span>
+                  <span>GraphQL</span>
+                  <span>MongoDB</span>
+                  <span>Tailwind</span>
+                  <span>Passport</span>
+                </div>
+                <h3>About</h3>
+                <textarea readonly rows="10" cols="50">Crm made with React, Apollo, GraphQL, Tailwind and MongoDB for retail.
+Some features used:
+ - User can create customer orders
+ - User canset an order as completed, pending or canceled
+ - Best sellers and customers reports
+
+*** Default Credentials:
+email: candy@candy.com
+password: 123456
+                </textarea>
+                <div class="modalButtons">
+                  <a href="https://github.com/alvlinarez/crm" target="_blank">
+                    <span><i class="fas fa-eye"></i> Demo</span>
+                  </a>
+                  <a href="https://github.com/alvlinarez/crm" target="_blank">
+                    <span><i class="fas fa-code"></i> Code</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tasks Modal -->
+        <div id="tasksModal" class="modal">
+          <!-- Modal content -->
+          <div class="modalContent">
+            <span class="close" onclick="closeModal('tasksModal')">&times;</span>
+            <div class="modalContainer">
+              <div class="modalImage">
+                <img src="./assets/static/tasks.png" alt="Tasks" />
+              </div>
+              <div class="modalInfoContent">
+                <h2>Tasks</h2>
+                <div class="modalSkills">
+                  <span>Nextjs</span>
+                  <span>React Api Context</span>
+                  <span>Express</span>
+                  <span>MongoDB</span>
+                  <span>Passport</span>
+                </div>
+                <h3>About</h3>
+                <textarea readonly rows="10" cols="50">Website that uses Nextjs, React Api Context, Express and MongoDB.
+Some features used:
+ - User can add projects
+ - User can add tasks
+ - User can set tasks as completed or incompleted
+ - User can delete tasks, projects
+ - Authentication with Google and Facebook
+
+*** Default Credentials:
+email: candy@candy.com
+password: 123456
+                </textarea>
+                <div class="modalButtons">
+                  <a href="https://github.com/alvlinarez/tasks" target="_blank">
+                    <span><i class="fas fa-eye"></i> Demo</span>
+                  </a>
+                  <a href="https://github.com/alvlinarez/tasks" target="_blank">
+                    <span><i class="fas fa-code"></i> Code</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wasap Modal -->
+        <div id="wasapModal" class="modal">
+          <!-- Modal content -->
+          <div class="modalContent">
+            <span class="close" onclick="closeModal('wasapModal')">&times;</span>
+            <div class="modalContainer">
+              <div class="modalImage">
+                <img src="./assets/static/wasap.png" alt="Wasap" />
+              </div>
+              <div class="modalInfoContent">
+                <h2>Wasap</h2>
+                <div class="modalSkills">
+                  <span>React</span>
+                  <span>Redux</span>
+                  <span>Styled Components</span>
+                </div>
+                <h3>About</h3>
+                <textarea readonly rows="10" cols="50">Lite Whatsapp website clone that uses React, Redux and Styled Components.
+Features:
+- Users can chat with others chat in private
+- Users can chat in public chats
+- User can update their username, add more users and public chats
+                </textarea>
+                <div class="modalButtons">
+                  <a href="https://github.com/alvlinarez/wasap" target="_blank">
+                    <span><i class="fas fa-eye"></i> Demo</span>
+                  </a>
+                  <a href="https://github.com/alvlinarez/wasap" target="_blank">
+                    <span><i class="fas fa-code"></i> Code</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
       </section>
@@ -231,7 +436,7 @@ Some features used:
         <div class="experienceContainer">
           <div class="experienceContent">
             <h2>Freelancer</h2>
-            <h3>Frontend Developer</h3>
+            <h3>Full stack Developer</h3>
             <p>Design and implementation of responsive, efficient, scalable and robust web solutions
               with React, Redux, Apollo, Node and Java. Relational database management with Mysql
               and Postgress, and non-relational with MongoDB and Redis.</p>

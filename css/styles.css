@@ -271,6 +271,10 @@ section {
 .modalContainer .modalImage img {
   width: 90%;
 }
+.modalContainer .modalImage .petgramImg {
+  height: 90%;
+  width: 50%;
+}
 .modalContainer .modalInfoContent {
   width: 40%;
 }
@@ -291,7 +295,7 @@ section {
 .modalContainer .modalButtons {
   margin-top: 2rem;
 }
-.modalContainer .modalButtons button {
+.modalContainer .modalButtons a {
   background: #c72c41;
   border: 0.2rem solid #c72c41;
   cursor: pointer;
@@ -300,15 +304,14 @@ section {
   text-transform: uppercase;
   font-family: "Saira Extra Condensed", sans-serif;
   font-size: 1.5rem;
-}
-.modalContainer .modalButtons button a {
   text-decoration: none;
+  border-radius: 0.3rem;
   color: #e8e8e8;
 }
-.modalContainer .modalButtons button a i {
+.modalContainer .modalButtons a i {
   margin-right: 1rem;
 }
-.modalContainer .modalButtons button:hover {
+.modalContainer .modalButtons a:hover {
   background-color: #801336;
   border: 0.2rem solid #801336;
 }
