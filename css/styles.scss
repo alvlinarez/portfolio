@@ -216,6 +216,9 @@ section {
 /* === SKILLS === */
 
 #skills {
+  @media screen and (max-width: $small) {
+    height: auto;
+  }
 }
 
 .skillsGrid {
@@ -223,6 +226,9 @@ section {
   grid-template-columns: 33% 33% 33%;
   width: 100%;
   height: 100%;
+  @media screen and (max-width: $small) {
+    grid-template-columns: 50% 50%;
+  }
 }
 
 .skillsGridItem {
@@ -236,7 +242,6 @@ section {
     text-align: center;
     height: 7rem;
     img {
-      //width: 30%;
       width: 7rem;
     }
     i {
@@ -245,6 +250,12 @@ section {
   }
   &:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  @media screen and (max-width: $small) {
+    height: 12rem;
+    p {
+      margin: 0;
+    }
   }
 }
 
@@ -277,6 +288,9 @@ section {
       font-family: $font-family2;
       color: $dark;
     }
+  }
+  @media screen and (max-width: $small) {
+    flex-direction: column;
   }
 }
 
@@ -444,6 +458,12 @@ section {
       &:hover {
         text-decoration: underline;
       }
+    }
+  }
+  @media screen and (max-width: $small) {
+    flex-direction: column;
+    .linksContent {
+      margin-bottom: 2rem;
     }
   }
 }
