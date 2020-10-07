@@ -286,25 +286,21 @@ section {
 /* The Modal (background) */
 .modal {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Stay in place */
   z-index: 1;
-  /* Sit on top */
   padding-top: 10rem;
-  /* Location of the box */
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
   background-color: black;
-  /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
+}
+@media screen and (max-width: 600px) {
+  .modal {
+    padding-top: 3rem;
+  }
 }
 
 /* Modal Content */
@@ -315,6 +311,12 @@ section {
   border: 0.1rem solid #888;
   width: 80%;
   height: 80%;
+}
+@media screen and (max-width: 600px) {
+  .modalContent {
+    width: 90%;
+    height: 95%;
+  }
 }
 
 /* The Close Button */
@@ -388,6 +390,23 @@ section {
 .modalContainer .modalButtons a:hover {
   background-color: #801336;
   border: 0.2rem solid #801336;
+}
+@media screen and (max-width: 600px) {
+  .modalContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .modalContainer .modalImage {
+    display: none;
+  }
+  .modalContainer .modalInfoContent {
+    width: auto;
+  }
+  .modalContainer .modalButtons {
+    display: flex;
+    margin-top: 5rem;
+    justify-content: space-around;
+  }
 }
 
 /* === END PROJECTS === */

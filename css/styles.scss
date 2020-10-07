@@ -296,17 +296,20 @@ section {
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 10rem; /* Location of the box */
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 10rem;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  @media screen and (max-width: $small) {
+    padding-top: 3rem;
+  }
 }
 
 /* Modal Content */
@@ -317,6 +320,10 @@ section {
   border: 0.1rem solid #888;
   width: 80%;
   height: 80%;
+  @media screen and (max-width: $small) {
+    width: 90%;
+    height: 95%;
+  }
 }
 
 /* The Close Button */
@@ -388,6 +395,21 @@ section {
         background-color: $red3;
         border: 0.2rem solid $red3;
       }
+    }
+  }
+  @media screen and (max-width: $small) {
+    display: flex;
+    flex-direction: column;
+    .modalImage {
+      display: none;
+    }
+    .modalInfoContent {
+      width: auto;
+    }
+    .modalButtons {
+      display: flex;
+      margin-top: 5rem;
+      justify-content: space-around;
     }
   }
 }
