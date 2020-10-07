@@ -71,13 +71,49 @@ aside .asideIconsContainer a {
 aside .asideIconsContainer a i:hover {
   color: #fff;
 }
+@media screen and (max-width: 600px) {
+  aside {
+    display: none;
+    position: fixed;
+    width: 100%;
+  }
+}
 
 /* === END ASIDE STYLES === */
+/* === RESPONSIVE NAV STYLES === */
+.responsiveNav {
+  display: none;
+  background-color: #c72c41;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 2rem;
+}
+.responsiveNav i {
+  font-size: 2.5rem;
+  color: #e8e8e8;
+}
+.responsiveNav #closeNav {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .responsiveNav {
+    display: inline-block;
+  }
+}
+
+/* === END RESPONSIVE NAV STYLES === */
 /* === MAIN STYLES === */
 main {
   margin-left: 20%;
   background-color: #fff;
   width: 80%;
+}
+@media screen and (max-width: 600px) {
+  main {
+    margin-left: 0;
+    width: 100%;
+  }
 }
 
 section {
@@ -105,7 +141,7 @@ section {
 }
 
 .aboutIntroductionContainer {
-  height: 75%;
+  height: 70%;
 }
 .aboutIntroductionContainer .title {
   height: 22rem;
@@ -122,6 +158,20 @@ section {
   color: #000;
   font-size: 2rem;
   font-family: "Open Sans", sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .aboutIntroductionContainer {
+    margin-top: 2rem;
+  }
+  .aboutIntroductionContainer .title {
+    height: 18rem;
+  }
+  .aboutIntroductionContainer .title a {
+    font-size: 3.5rem;
+  }
+  .aboutIntroductionContainer p {
+    font-size: 1.8rem;
+  }
 }
 
 .aboutButtonContainer {

@@ -13,14 +13,14 @@
 </head>
 <body>
   <div class="container">
-    <aside>
+    <aside id="aside">
       <nav>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#touch">Stay in touch</a></li>
+          <li onclick="navigate('about')"><a>About</a></li>
+          <li onclick="navigate('skills')"><a>Skills</a></li>
+          <li onclick="navigate('projects')"><a>Projects</a></li>
+          <li onclick="navigate('experience')"><a>Experience</a></li>
+          <li onclick="navigate('touch')"><a>Stay in touch</a></li>
         </ul>
       </nav>
       <div class="asideIconsContainer">
@@ -41,6 +41,11 @@
         </a>
       </div>
     </aside>
+
+    <nav class="responsiveNav">
+      <span id="bars"><i class="fas fa-bars"></i></span>
+      <span id="closeNav"><i class="fas fa-times"></i></span>
+    </nav>
 
     <main>
       <section id="about">
@@ -490,6 +495,7 @@ Features:
       </footer>
     </main>
   </div>
+  <script type="text/javascript" src="./js/nav.js"></script>
   <script type="text/javascript" src="./js/typewriter.js"></script>
   <script type="text/javascript" src="./js/modal.js"></script>
 </body>

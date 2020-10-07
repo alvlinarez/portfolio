@@ -10,6 +10,10 @@ $font-family1: 'Oxygen', sans-serif;
 $font-family2: 'Saira Extra Condensed', sans-serif;
 $font-family3: 'Open Sans', sans-serif;
 
+$small: 600px;
+$medium: 768px;
+$large: 992px;
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -81,9 +85,37 @@ aside {
       }
     }
   }
+  @media screen and (max-width: $small) {
+    display: none;
+    position: fixed;
+    width: 100%;
+  }
 }
 
 /* === END ASIDE STYLES === */
+
+/* === RESPONSIVE NAV STYLES === */
+
+.responsiveNav {
+  display: none;
+  background-color: $red2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 2rem;
+  i {
+    font-size: 2.5rem;
+    color: $gray1;
+  }
+  #closeNav {
+    display: none;
+  }
+  @media screen and (max-width: $small) {
+    display: inline-block;
+  }
+}
+
+/* === END RESPONSIVE NAV STYLES === */
 
 /* === MAIN STYLES === */
 
@@ -91,6 +123,10 @@ main {
   margin-left: 20%;
   background-color: $white;
   width: 80%;
+  @media screen and (max-width: $small) {
+    margin-left: 0;
+    width: 100%;
+  }
 }
 
 section {
@@ -119,7 +155,7 @@ section {
 }
 
 .aboutIntroductionContainer {
-  height: 75%;
+  height: 70%;
   .title {
     height: 22rem;
     a {
@@ -135,6 +171,18 @@ section {
     color: #000;
     font-size: 2rem;
     font-family: $font-family3;
+  }
+  @media screen and (max-width: $small) {
+    margin-top: 2rem;
+    .title {
+      height: 18rem;
+      a {
+        font-size: 3.5rem;
+      }
+    }
+    p {
+      font-size: 1.8rem;
+    }
   }
 }
 
