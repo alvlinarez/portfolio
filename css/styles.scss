@@ -85,10 +85,28 @@ aside {
       }
     }
   }
-  @media screen and (max-width: $small) {
+  @media screen and (max-width: $medium) {
     display: none;
     position: fixed;
     width: 100%;
+  }
+  @media screen and (min-width: $medium) and (max-width: $large) {
+    nav {
+      ul {
+        li {
+          font-size: 3rem;
+        }
+      }
+    }
+    .asideIconsContainer {
+      a {
+        span {
+          i {
+            font-size: 7rem;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -110,7 +128,7 @@ aside {
   #closeNav {
     display: none;
   }
-  @media screen and (max-width: $small) {
+  @media screen and (max-width: $medium) {
     display: inline-block;
   }
 }
@@ -123,7 +141,7 @@ main {
   margin-left: 20%;
   background-color: $white;
   width: 80%;
-  @media screen and (max-width: $small) {
+  @media screen and (max-width: $medium) {
     margin-left: 0;
     width: 100%;
   }
@@ -184,6 +202,19 @@ section {
       font-size: 1.8rem;
     }
   }
+  @media screen and (min-width: $medium) and (max-width: $large) {
+    margin-top: 5rem;
+    .title {
+      height: 25rem;
+      a {
+        font-size: 8rem;
+      }
+    }
+    p {
+      margin-top: 7rem;
+      font-size: 3rem;
+    }
+  }
 }
 
 .aboutButtonContainer {
@@ -209,6 +240,12 @@ section {
       border: 0.2rem solid $red2;
     }
   }
+  @media screen and (min-width: $medium) and (max-width: $large) {
+    .aboutButton {
+      font-size: 4rem;
+      padding: 1.5rem 2.5rem;
+    }
+  }
 }
 
 /* === END ABOUT === */
@@ -216,7 +253,7 @@ section {
 /* === SKILLS === */
 
 #skills {
-  @media screen and (max-width: $small) {
+  @media screen and (max-width: $medium) {
     height: auto;
   }
 }
@@ -226,7 +263,7 @@ section {
   grid-template-columns: 33% 33% 33%;
   width: 100%;
   height: 100%;
-  @media screen and (max-width: $small) {
+  @media screen and (max-width: $medium) {
     grid-template-columns: 50% 50%;
   }
 }
@@ -255,6 +292,13 @@ section {
     height: 12rem;
     p {
       margin: 0;
+    }
+  }
+  @media screen and (min-width: $medium) and (max-width: $large) {
+    height: 15rem;
+    p {
+      margin: 0.5rem;
+      font-size: 2rem;
     }
   }
 }
@@ -289,8 +333,15 @@ section {
       color: $dark;
     }
   }
-  @media screen and (max-width: $small) {
+  @media screen and (max-width: $medium) {
     flex-direction: column;
+  }
+  @media screen and (min-width: $medium) and (max-width: $large) {
+    .projectsImageContainer {
+      p {
+        font-size: 5rem;
+      }
+    }
   }
 }
 
@@ -320,9 +371,9 @@ section {
   border: 0.1rem solid #888;
   width: 80%;
   height: 80%;
-  @media screen and (max-width: $small) {
+  @media screen and (max-width: $medium) {
     width: 90%;
-    height: 95%;
+    height: auto;
   }
 }
 
@@ -412,6 +463,34 @@ section {
       justify-content: space-around;
     }
   }
+
+  @media screen and (min-width: $medium) and (max-width: $large) {
+    display: flex;
+    flex-direction: column;
+    .modalImage {
+      width: 100%;
+      img {
+        width: 70%;
+      }
+    }
+    .modalSkills {
+      font-size: 2.5rem;
+    }
+    textarea {
+      font-size: 2.5rem;
+    }
+    .modalInfoContent {
+      width: auto;
+    }
+    .modalButtons {
+      display: flex;
+      margin-top: 2rem;
+      justify-content: space-around;
+      a {
+        font-size: 2.5rem;
+      }
+    }
+  }
 }
 
 /* === END PROJECTS === */
@@ -449,6 +528,20 @@ section {
     text-align: right;
     color: $red2;
     font-family: $font-family3;
+  }
+  @media screen and (min-width: $medium) and (max-width: $large) {
+    h2 {
+      font-size: 4rem;
+    }
+    h3 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+    .experienceDate {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -488,6 +581,20 @@ section {
       margin-bottom: 2rem;
     }
   }
+  @media screen and (min-width: $medium) and (max-width: $large) {
+    flex-direction: column;
+    .linksContent {
+      margin-bottom: 2rem;
+      span {
+        i {
+          font-size: 10rem;
+        }
+      }
+      a {
+        font-size: 2.5rem;
+      }
+    }
+  }
 }
 
 /* === END TOUCH === */
@@ -501,6 +608,9 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (min-width: $medium) and (max-width: $large) {
+    font-size: 2rem;
+  }
 }
 
 /* === END FOOTER === */

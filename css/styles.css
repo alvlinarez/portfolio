@@ -71,11 +71,19 @@ aside .asideIconsContainer a {
 aside .asideIconsContainer a i:hover {
   color: #fff;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   aside {
     display: none;
     position: fixed;
     width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  aside nav ul li {
+    font-size: 3rem;
+  }
+  aside .asideIconsContainer a span i {
+    font-size: 7rem;
   }
 }
 
@@ -96,7 +104,7 @@ aside .asideIconsContainer a i:hover {
 .responsiveNav #closeNav {
   display: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .responsiveNav {
     display: inline-block;
   }
@@ -109,7 +117,7 @@ main {
   background-color: #fff;
   width: 80%;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   main {
     margin-left: 0;
     width: 100%;
@@ -173,6 +181,21 @@ section {
     font-size: 1.8rem;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .aboutIntroductionContainer {
+    margin-top: 5rem;
+  }
+  .aboutIntroductionContainer .title {
+    height: 25rem;
+  }
+  .aboutIntroductionContainer .title a {
+    font-size: 8rem;
+  }
+  .aboutIntroductionContainer p {
+    margin-top: 7rem;
+    font-size: 3rem;
+  }
+}
 
 .aboutButtonContainer {
   margin-top: 7rem;
@@ -197,10 +220,16 @@ section {
 .aboutButtonContainer .aboutButton:active, .aboutButtonContainer .aboutButton:focus {
   border: 0.2rem solid #c72c41;
 }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .aboutButtonContainer .aboutButton {
+    font-size: 4rem;
+    padding: 1.5rem 2.5rem;
+  }
+}
 
 /* === END ABOUT === */
 /* === SKILLS === */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   #skills {
     height: auto;
   }
@@ -212,7 +241,7 @@ section {
   width: 100%;
   height: 100%;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .skillsGrid {
     grid-template-columns: 50% 50%;
   }
@@ -247,6 +276,15 @@ section {
     margin: 0;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .skillsGridItem {
+    height: 15rem;
+  }
+  .skillsGridItem p {
+    margin: 0.5rem;
+    font-size: 2rem;
+  }
+}
 
 /* === END SKILLS === */
 /* === PROJECTS === */
@@ -277,9 +315,14 @@ section {
   font-family: "Saira Extra Condensed", sans-serif;
   color: #2d132c;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .projectsContainer {
     flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .projectsContainer .projectsImageContainer p {
+    font-size: 5rem;
   }
 }
 
@@ -312,10 +355,10 @@ section {
   width: 80%;
   height: 80%;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .modalContent {
     width: 90%;
-    height: 95%;
+    height: auto;
   }
 }
 
@@ -408,6 +451,35 @@ section {
     justify-content: space-around;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .modalContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .modalContainer .modalImage {
+    width: 100%;
+  }
+  .modalContainer .modalImage img {
+    width: 70%;
+  }
+  .modalContainer .modalSkills {
+    font-size: 2.5rem;
+  }
+  .modalContainer textarea {
+    font-size: 2.5rem;
+  }
+  .modalContainer .modalInfoContent {
+    width: auto;
+  }
+  .modalContainer .modalButtons {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-around;
+  }
+  .modalContainer .modalButtons a {
+    font-size: 2.5rem;
+  }
+}
 
 /* === END PROJECTS === */
 /* === EXPERIENCE === */
@@ -443,6 +515,20 @@ section {
   text-align: right;
   color: #c72c41;
   font-family: "Open Sans", sans-serif;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .experienceContainer h2 {
+    font-size: 4rem;
+  }
+  .experienceContainer h3 {
+    font-size: 3rem;
+  }
+  .experienceContainer p {
+    font-size: 2rem;
+  }
+  .experienceContainer .experienceDate {
+    font-size: 2rem;
+  }
 }
 
 /* === END EXPERIENCE === */
@@ -483,6 +569,20 @@ section {
     margin-bottom: 2rem;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .linksContainer {
+    flex-direction: column;
+  }
+  .linksContainer .linksContent {
+    margin-bottom: 2rem;
+  }
+  .linksContainer .linksContent span i {
+    font-size: 10rem;
+  }
+  .linksContainer .linksContent a {
+    font-size: 2.5rem;
+  }
+}
 
 /* === END TOUCH === */
 /* === END FOOTER === */
@@ -493,6 +593,11 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .footerContainer {
+    font-size: 2rem;
+  }
 }
 
 /* === END FOOTER === */
