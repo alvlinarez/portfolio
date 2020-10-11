@@ -3,7 +3,7 @@ $red2: #c72c41;
 $red3: #801336;
 $dark: #2d132c;
 $white: #fff;
-$gray1: #e8e8e8;
+$gray1: #ebebeb;
 $gray2: #cccccc;
 
 $font-family1: 'Oxygen', sans-serif;
@@ -59,13 +59,11 @@ aside {
         text-transform: uppercase;
         margin-bottom: 5rem;
         font-size: 1.8rem;
-        a {
-          color: $gray1;
-          text-decoration: none;
-          &:hover {
-            cursor: pointer;
-            color: $white;
-          }
+        color: $gray1;
+        text-decoration: none;
+        &:hover {
+          cursor: pointer;
+          color: $white;
         }
       }
     }
@@ -176,12 +174,14 @@ section {
   height: 70%;
   .title {
     height: 22rem;
-    a {
+    p {
       font-family: $font-family2;
       text-decoration: none;
       color: $dark;
       font-size: 7.5rem;
       text-transform: uppercase;
+      margin: 0;
+      padding: 0;
     }
   }
   p {
@@ -194,8 +194,10 @@ section {
     margin-top: 2rem;
     .title {
       height: 18rem;
-      a {
+      p {
         font-size: 3.5rem;
+        margin: 0;
+        padding: 0;
       }
     }
     p {
@@ -206,8 +208,10 @@ section {
     margin-top: 5rem;
     .title {
       height: 25rem;
-      a {
+      p {
         font-size: 8rem;
+        margin: 0;
+        padding: 0;
       }
     }
     p {
